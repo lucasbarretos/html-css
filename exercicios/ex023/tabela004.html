@@ -9,16 +9,69 @@
     table{
         border-collapse: collapse;
     }
-   th{
+    caption{
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+   th,td{
         border: 1px solid black;
         border-collapse: collapse;
     }
+    tr.destaque{
+        background-color: lightgreen;
+    }
 </style>
 <body>
-   <table>
-    <th>Grupo</th>
-    <th>Nomes</th>
-    <th>Filmes</th>
-   </table>
+    <colgroup>
+        <col>
+    </colgroup>
+    <table>
+        <caption>Cadastro</caption>
+        <tr></tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+        <td>Profissão</td>
+       
+       <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+       </tr>
+
+       <tr>
+        <td>Cláudio</td>
+        <td>M</td>
+        <td>28</td>
+        <td>Programador</td>
+       </tr>
+       <tr class="destaque">
+        <td>Gustavo</td>
+        <td>M</td>
+        <td>42</td>
+        <td>Professor</td>
+       </tr>
+       <tr>
+        <td>Hélio</td>
+        <td>M</td>
+        <td>19</td>
+        <td>Vendedor</td>
+       </tr>
+       <tr class="destaque">
+        <td>Maria</td>
+        <td>F</td>
+        <td>19</td>
+        <td>Vendedor</td>
+       </tr>
+       <tr>
+        <td>Otávio</td>
+        <td>M</td>
+        <td>22</td>
+        <td>Nutricionista</td>
+       </tr>
+    </table>
+
 </body>
 </html>
