@@ -19,19 +19,20 @@
         border-collapse: collapse;
         padding: 14px;
     }
-    .colu{
+    col.cnome{
         background-color: red;
     }
-  
+    col.grupo{
+        background-color: lightgreen;
+    }
 </style>
 <body>
-    <colgroup>
-        <col class="colu">
-        <col>
-        <col>
-      
-    </colgroup>
     <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <col class="grupo" span="">
+            <col>
+        </colgroup>
         <caption>Cadastro</caption>
         <tr></tr>
         <th>Nome</th>
