@@ -5,18 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        table{
+            border-collapse: collapse;
+        }
+        th{
+            padding: 10px;
+        }
+        td,tr{
+            padding: 10px;
+        }
+        tr,td,th{
+            border: 1px solid black;
+        }
+        col.cnome{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Exercicio de tabelas<h1>
+        <h1>Mesclagem de Células</h1>
         <table>
-            <caption>Filmes favoritos</caption>
-            <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th>Filmes</th>
-            </tr>
+           
+        <tr>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th scope="col" colspan="3">Filmes</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Allen</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+           <td>Beatriz Souza </td>
+           <td>Hulk</td>
+           <td>Inception</td>
+           <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Claúdia Melo</td>
+            <td>Oblivion</td>
+            <td>Matriz</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Homens</th>
+            <td>Bruno Medonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-e</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars V</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+        <tr>
+            <td colspan="4" scope="row">Total</td>
+            <th>1000</th>
+        </tr>
         </table>
         
 </body>
